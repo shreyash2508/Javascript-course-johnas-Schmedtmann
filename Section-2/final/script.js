@@ -152,9 +152,9 @@ if (aged >= 18) {
 // console.log('23' - '10' - 3);
 // console.log('23' / '2');
 
-// let n = '1' + 1; // '11' Number gets converted to a string 
-// n = n - 1;
-// console.log(n);  //
+let n = '1' + 1; // '11' Number gets converted to a string 
+n = n - 1;
+console.log(n);  //
 
 // console.log(Boolean(0));
 // console.log(Boolean(undefined));
