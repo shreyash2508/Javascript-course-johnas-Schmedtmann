@@ -122,14 +122,14 @@ console.log(ageJonas, ageSarah);
 // multiple
 // lines`);
 
-// const age = 15;
+const aged = 15;
 
-// if (age >= 18) {
-//   console.log('Sarah can start driving license 🚗');
-// } else {
-//   const yearsLeft = 18 - age;
-//   console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
-// }
+if (aged >= 18) {
+  console.log('Sarah can start driving license 🚗');
+} else {
+  const yearsLeft = 18 - aged;
+  console.log(`Sarah is too young. Wait another ${yearsLeft} years :)`);
+}
 
 // const birthYear = 2012;
 
