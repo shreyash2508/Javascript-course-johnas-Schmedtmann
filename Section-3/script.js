@@ -25,7 +25,7 @@ logger();
 //     console.log(juice);
 // }
 
-// fruitprocessor(8,0);
+// console.log(fruitprocessor(8,0));
 
 // // Function declaration
 // function calcAge1(birthYeah) {
@@ -43,19 +43,55 @@ logger();
 //   console.log(age1, age2);
 
 
-//Arrow Function
-  const calcAge3 = birthYeah => 2037 - birthYeah;
-  const age3 = calcAge3(1991);
-  console.log(age3);
+// Arrow Function
+// const calcAge3 = birthYeah => 2037 - birthYeah;
+// const age3 = calcAge3(1991);
+// console.log(age3);
   
-  const yearsUntilRetirement = (birthYeah, firstName) => {
-    const age = 2037 - birthYeah;
-    const retirement = 65 - age;
-    // return retirement;
-    return `${firstName} retires in ${retirement} years`;
-  }
+// const yearsUntilRetirement = (birthYeah, firstName) => {
+//   const age = 2037 - birthYeah;
+//   const retirement = 65 - age;
+//   // return retirement;
+//   return `${firstName} retires in ${retirement} years`;
+// }
   
-  console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
+// console.log(yearsUntilRetirement(1991, 'Jonas')); console.log(yearsUntilRetirement(1980, 'Bob'));
 
-  
-  
+//Function calling other functions
+
+function cutFruitPieces(fruit){
+  return fruit*4;
+}
+
+function fruitprocessor(apples,oranges){
+   console.log(apples,oranges);
+   const applepiece= cutFruitPieces(apples);
+   const orangepiece= cutFruitPieces(oranges);
+
+   const juice= `Juice with ${applepiece} pieces of apples and ${orangepiece} pieces of oranges.`;
+   return(juice);
+}
+
+console.log(fruitprocessor(2,3));
+
+//Reviewing Functions
+
+const calcAge = function (birthYeah) {
+  return 2037 - birthYeah;
+}
+
+const yearsUntilRetirement = function (birthYeah,_firstname) {
+     const age = calcAge(birthYeah);
+     const retirement = 65 - age;
+
+if (retirement>0){
+  console.log (`${_firstname} will retire in ${retirement} years` )
+  return (retirement);
+}
+else{
+  console.log(`${_firstname} has already retired`)
+  return -1;
+}
+}
+
+console.log(yearsUntilRetirement(1991, 'Jonas'));
