@@ -19,13 +19,13 @@ logger();
 logger();
 logger();
 
-// function fruitprocessor(apple,oranges){
-//     console.log(apple,oranges);
-//     const juice= `Juice with ${apple} apples and ${oranges} oranges.`;
-//     console.log(juice);
-// }
+function fruitprocessor(apple,oranges){
+    console.log(apple,oranges);
+    const juice= `Juice with ${apple} apples and ${oranges} oranges.`;
+    console.log(juice);
+}
 
-// console.log(fruitprocessor(8,0));
+console.log(fruitprocessor(8,0));
 
 // // Function declaration
 // function calcAge1(birthYeah) {
