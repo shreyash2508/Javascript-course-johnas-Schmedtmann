@@ -1,3 +1,5 @@
+'use strict'
+
 const bill = 275;
 
 /* Write your code below. Good luck! 🙂 */

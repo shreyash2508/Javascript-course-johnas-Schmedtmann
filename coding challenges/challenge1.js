@@ -1,3 +1,5 @@
+'use strict'
+
 const massMark=78;
 const heightMark=1.69;
 const massJohn=92;
