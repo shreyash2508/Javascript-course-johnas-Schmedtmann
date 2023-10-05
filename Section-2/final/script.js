@@ -97,10 +97,10 @@ console.log(ageJonas, ageSarah);
 // const ageJonas= now - 2031;
 // const ageSarah= now - 2011;
 
-console.log(now-2031 > now-2011);
-let x, y;
-x = y = 25 - 10 - 5; // x = y = 10, x = 10
-console.log(x, y);
+// console.log(now-2031 > now-2011);
+// let x, y;
+// x = y = 25 - 10 - 5; // x = y = 10, x = 10
+// console.log(x, y);
 
 // const averageAge = (ageJonas + ageSarah) / 2;
 // console.log(ageJonas, ageSarah, averageAge);
@@ -150,13 +150,13 @@ if (aged >= 18) {
 
 // // type coercion
 // console.log('I am ' + 23 + ' years old');
-// console.log('I am ' + '23' + ' years old'); //they both are same thanks to coercion.
+ console.log('I am ' + '23' + ' years old'); //they both are same thanks to coercion.
 // console.log('23' - '10' - 3);
 // console.log('23' / '2');
 
-// let n = '1' + 1; // '11' Number gets converted to a string 
-// n = n - 1;
-// console.log(n);  //
+let n = '1' + 1; // '11' Number gets converted to a string 
+n = n - 1;
+console.log(n);  //
 
 // console.log(Boolean(0));
 // console.log(Boolean(undefined));
@@ -164,12 +164,12 @@ if (aged >= 18) {
 // console.log(Boolean({}));
 // console.log(Boolean(''));
 
-const money = 100;
-if (money) {
-  console.log("Don't spend it all ;)");
-} else {
-  console.log('You should get a job!');
-}
+// const money = 100;
+// if (money) {
+//   console.log("Don't spend it all ;)");
+// } else {
+//   console.log('You should get a job!');
+// }
 
 // let height = 0;
 // if (height) {
